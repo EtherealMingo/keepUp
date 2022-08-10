@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>阅览量增加器</title>
+  <link rel="stylesheet" href="/styles/inline.css">
+</head>
+
+<body>
+  <div id="popup-content">
+    <h1>阅览量增加器</h1>
+    <div class="input_wrapper">
+      <input id="urlField" type="url" placeholder="请输入 URL" spellcheck="false">
+      <span class="validity"></span>
+      <button id="save">⊕添加</button>
+    </div>
+    <table class="table_wrapper">
+      <thead>
+        <tr>
+          <th class="urlCol">URL</th>
+          <th class="operationCol">操作</th>
+        </tr>
+      </thead>
+      <tbody id="urlTableData"></tbody>
+      <tfoot class="emptyArea">
+        <tr>
+          <td colspan="2">无内容</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="button_group">
+      <button id="start">开始</button>
+      <button id="pause">停止</button>
+      <button id="reset">清空</button>
+    </div>
+  </div>
+  <script src="./scripts/popup.js"></script>
+</body>
+
+</html>

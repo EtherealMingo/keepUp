@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "文章浏览量增加器",
+  "short_name": "upCount",
+  "description": "自动刷新文章的浏览量",
+  "version": "0.1.0",
+  "background": {
+    "scripts": [
+      "./scripts/background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "./icon/icon_120x120.png",
+    "default_title": "文章浏览量增加器",
+    "default_popup": "./popup.html"
+  },
+  "icons": {
+    "120": "./icon/icon_120x120.png",
+    "80": "./icon/icon_80x80.png",
+    "48": "./icon/icon_48x48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
